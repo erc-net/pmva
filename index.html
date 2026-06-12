@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMVA Training | Prevention & Management of Violence and Aggression</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+    <style>
+        body{
+            font-family:'Poppins',sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        .hero-bg{
+            background:
+            linear-gradient(rgba(5,20,60,.85),rgba(5,20,60,.9)),
+            url("https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1800&q=80");
+            background-size:cover;
+            background-position:center;
+        }
+
+        .glass{
+            backdrop-filter:blur(15px);
+            background:rgba(255,255,255,.08);
+        }
+
+        .gold-gradient{
+            background:linear-gradient(90deg,#FFD54F,#D4AF37,#F7D774);
+        }
+
+        .floating{
+            animation:float 4s ease-in-out infinite;
+        }
+
+        @keyframes float{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-12px);}
+            100%{transform:translateY(0);}
+        }
+
+        .pulse-glow{
+            animation:pulse 2s infinite;
+        }
+
+        @keyframes pulse{
+            0%{box-shadow:0 0 0 0 rgba(212,175,55,.6);}
+            70%{box-shadow:0 0 0 18px rgba(212,175,55,0);}
+            100%{box-shadow:0 0 0 0 rgba(212,175,55,0);}
+        }
+
+        .card:hover{
+            transform:translateY(-10px) scale(1.02);
+        }
+
+        .card{
+            transition:.4s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-[#081F4D]/90 backdrop-blur-lg shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+        <h1 class="text-3xl font-extrabold text-yellow-400">
+            PMVA Training
+        </h1>
+
+        <div class="hidden md:flex gap-8 text-white font-medium">
+            <a href="#about" class="hover:text-yellow-400">About</a>
+            <a href="#courses" class="hover:text-yellow-400">Courses</a>
+            <a href="#approach" class="hover:text-yellow-400">Approach</a>
+            <a href="#contact" class="hover:text-yellow-400">Apply</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-bg min-h-screen flex items-center">
+
+<div class="max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-10 items-center">
+
+<div data-aos="fade-right">
+
+<div class="inline-block px-4 py-2 rounded-full bg-yellow-400 text-slate-900 font-semibold mb-6">
+Accredited Professional Training
+</div>
+
+<h1 class="text-6xl font-black text-white leading-tight">
+Prevention &
+<span class="text-yellow-400">
+Management of Violence
+</span>
+and Aggression
+</h1>
+
+<p class="text-gray-200 mt-8 text-xl leading-8">
+Develop the knowledge and practical skills to safely prevent,
+de-escalate and manage challenging behaviour while promoting
+human rights, dignity and least restrictive practice.
+</p>
+
+<div class="mt-10 flex flex-wrap gap-4">
+
+<button class="gold-gradient px-8 py-4 rounded-full font-bold text-slate-900 pulse-glow">
+Apply Now
+</button>
+
+<button class="border border-yellow-400 text-yellow-400 px-8 py-4 rounded-full hover:bg-yellow-400 hover:text-slate-900 transition">
+View Courses
+</button>
+
+</div>
+
+</div>
+
+<div class="floating" data-aos="zoom-in">
+<div class="glass rounded-3xl p-8 border border-white/20 shadow-2xl">
+
+<h2 class="text-3xl font-bold text-yellow-400 mb-6">
+Why PMVA?
+</h2>
+
+<ul class="space-y-4 text-white text-lg">
+<li>✔ Early recognition of aggression</li>
+<li>✔ Trauma-informed de-escalation</li>
+<li>✔ Evidence-based interventions</li>
+<li>✔ Safe breakaway techniques</li>
+<li>✔ Human rights focused practice</li>
+<li>✔ Accredited certification</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-16" data-aos="fade-up">
+
+<h2 class="text-5xl font-bold text-[#081F4D]">
+About PMVA
+</h2>
+
+<p class="mt-6 max-w-3xl mx-auto text-lg">
+PMVA is a structured framework designed for healthcare,
+mental health, education, social care and security environments.
+It prioritises prevention, communication and safe intervention,
+using physical techniques only when absolutely necessary.
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<div class="card bg-white rounded-3xl shadow-xl p-8" data-aos="flip-left">
+<h3 class="font-bold text-yellow-600 text-xl mb-3">Recognise</h3>
+<p>Identify early warning signs and behavioural escalation.</p>
+</div>
+
+<div class="card bg-white rounded-3xl shadow-xl p-8" data-aos="flip-left" data-aos-delay="100">
+<h3 class="font-bold text-yellow-600 text-xl mb-3">Prevent</h3>
+<p>Use communication and de-escalation strategies effectively.</p>
+</div>
+
+<div class="card bg-white rounded-3xl shadow-xl p-8" data-aos="flip-left" data-aos-delay="200">
+<h3 class="font-bold text-yellow-600 text-xl mb-3">Protect</h3>
+<p>Safeguard staff, patients and vulnerable individuals.</p>
+</div>
+
+<div class="card bg-white rounded-3xl shadow-xl p-8" data-aos="flip-left" data-aos-delay="300">
+<h3 class="font-bold text-yellow-600 text-xl mb-3">Respond</h3>
+<p>Apply lawful and proportionate interventions when required.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Courses -->
+
+<section id="courses" class="bg-[#081F4D] py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-yellow-400 mb-16" data-aos="fade-down">
+Training Courses
+</h2>
+
+<div class="grid lg:grid-cols-2 gap-10">
+
+<div class="bg-white rounded-3xl p-10 shadow-2xl card" data-aos="fade-right">
+
+<h3 class="text-3xl font-bold text-[#081F4D]">
+1-Day Refresher
+</h3>
+
+<ul class="mt-8 space-y-3">
+<li>✓ Legal updates</li>
+<li>✓ Safety principles</li>
+<li>✓ Breakaway techniques</li>
+<li>✓ Dynamic risk assessment</li>
+<li>✓ Non-harmful restraint</li>
+</ul>
+
+<button class="mt-8 bg-yellow-400 px-6 py-3 rounded-full font-bold">
+Enrol
+</button>
+
+</div>
+
+<div class="bg-white rounded-3xl p-10 shadow-2xl card" data-aos="fade-left">
+
+<h3 class="text-3xl font-bold text-[#081F4D]">
+2–3 Day Full PMVA Course
+</h3>
+
+<ul class="mt-8 space-y-3">
+<li>✓ Law & Ethics</li>
+<li>✓ Health & Safety</li>
+<li>✓ Positional Asphyxia</li>
+<li>✓ Substance Related Aggression</li>
+<li>✓ Restrictive & Non-Restrictive Practice</li>
+<li>✓ Incident Reporting</li>
+</ul>
+
+<button class="mt-8 bg-yellow-400 px-6 py-3 rounded-full font-bold">
+Register
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Outcomes -->
+
+<section class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+
+<div data-aos="fade-right">
+
+<h2 class="text-5xl font-bold text-[#081F4D] mb-8">
+Learning Outcomes
+</h2>
+
+<div class="space-y-5">
+
+<div class="bg-white shadow-lg rounded-xl p-5">
+Recognise early signs of aggression.
+</div>
+
+<div class="bg-white shadow-lg rounded-xl p-5">
+Apply trauma-informed de-escalation.
+</div>
+
+<div class="bg-white shadow-lg rounded-xl p-5">
+Perform safe physical interventions.
+</div>
+
+<div class="bg-white shadow-lg rounded-xl p-5">
+Protect yourself and others.
+</div>
+
+<div class="bg-white shadow-lg rounded-xl p-5">
+Complete incident documentation and debriefs.
+</div>
+
+</div>
+
+</div>
+
+<div data-aos="zoom-in">
+<img
+src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
+class="rounded-3xl shadow-2xl"
+alt="">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Approach -->
+
+<section id="approach" class="bg-yellow-50 py-24">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-[#081F4D]" data-aos="fade-up">
+Why Choose Our Training?
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+<div class="card bg-white rounded-3xl p-8 shadow-lg" data-aos="zoom-in">
+🏆 Accredited Trainers
+</div>
+
+<div class="card bg-white rounded-3xl p-8 shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+🎯 Scenario-Based Learning
+</div>
+
+<div class="card bg-white rounded-3xl p-8 shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+🛡 Human Rights Focused
+</div>
+
+<div class="card bg-white rounded-3xl p-8 shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+⚖ Least Restrictive Practice
+</div>
+
+<div class="card bg-white rounded-3xl p-8 shadow-lg" data-aos="zoom-in" data-aos-delay="400">
+📜 BILD ACT Aligned
+</div>
+
+<div class="card bg-white rounded-3xl p-8 shadow-lg" data-aos="zoom-in" data-aos-delay="500">
+🤝 Trauma Informed Care
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section id="contact" class="py-24 bg-[#081F4D]">
+
+<div class="max-w-5xl mx-auto px-6 text-center" data-aos="zoom-in">
+
+<h2 class="text-5xl text-white font-black">
+Ready to Become PMVA Certified?
+</h2>
+
+<p class="text-gray-300 text-xl mt-8">
+Gain the skills and confidence to manage challenging situations safely,
+professionally and ethically.
+</p>
+
+<div class="mt-10 flex flex-wrap justify-center gap-5">
+
+<button class="gold-gradient px-10 py-4 rounded-full text-slate-900 font-bold shadow-lg">
+Download Application Form
+</button>
+
+<button class="bg-white px-10 py-4 rounded-full font-bold text-[#081F4D]">
+Pre-Health Screening Form
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="bg-slate-950 text-center text-gray-400 py-8">
+© 2026 PMVA Training. All Rights Reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:false
+});
+</script>
+
+</body>
+</html>
