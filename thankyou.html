@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | PMVA Training</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#001F54] via-slate-900 to-[#001F54] min-h-screen flex items-center justify-center p-6">
+
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-10 text-center fade-in">
+
+        <!-- Success Icon -->
+        <div class="w-24 h-24 mx-auto rounded-full bg-yellow-400 flex items-center justify-center text-5xl pulse-glow">
+            ✓
+        </div>
+
+        <h1 class="text-5xl font-bold text-[#001F54] mt-8">
+            Thank You!
+        </h1>
+
+        <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+            Your PMVA course application has been submitted successfully.
+            Our team will review your information and contact you as soon as possible.
+        </p>
+
+        <p class="mt-4 text-gray-500">
+            You will be redirected to the homepage in
+            <span id="countdown" class="font-bold text-yellow-500">10</span>
+            seconds.
+        </p>
+
+        <div class="mt-8">
+            <a href="index.html"
+               class="inline-block bg-yellow-400 hover:bg-yellow-500 text-[#001F54] font-bold px-8 py-4 rounded-full transition duration-300 hover:scale-105">
+                Return to Home Now
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        let seconds = 10;
+        const countdown = document.getElementById("countdown");
+
+        const timer = setInterval(() => {
+            seconds--;
+            countdown.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(timer);
+
+                // Redirect to your homepage
+                window.location.href = "index.html";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

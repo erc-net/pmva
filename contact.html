@@ -1,81 +1,133 @@
-<!-- Contact Section -->
-<section id="contact" class="bg-gradient-to-br from-slate-50 to-yellow-50 py-20">
-    <div class="max-w-7xl mx-auto px-6">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PMVA Training</title>
 
-        <!-- Section Header -->
-        <div class="text-center mb-16">
-            <span class="inline-block bg-yellow-400 text-[#081F4D] font-semibold px-4 py-2 rounded-full mb-4">
-                Contact Us
-            </span>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-            <h2 class="text-4xl md:text-5xl font-bold text-[#081F4D]">
-                We'd Love to Hear From You
-            </h2>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-            <p class="mt-5 text-gray-600 max-w-2xl mx-auto">
-                Whether you're interested in PMVA training, need course information,
-                or have a general enquiry, our team is ready to assist you.
+    <style>
+        body{
+            font-family:'Poppins',sans-serif;
+        }
+
+        @keyframes fadeUp{
+            from{
+                opacity:0;
+                transform:translateY(40px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @keyframes float{
+            0%,100%{
+                transform:translateY(0);
+            }
+            50%{
+                transform:translateY(-10px);
+            }
+        }
+
+        .fade-up{
+            animation:fadeUp 1s ease forwards;
+        }
+
+        .floating{
+            animation:float 4s ease-in-out infinite;
+        }
+
+        .glass{
+            backdrop-filter:blur(15px);
+            background:rgba(255,255,255,.08);
+        }
+    </style>
+</head>
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-[#081F4D]/90 backdrop-blur-lg shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+        <h1 class="text-3xl font-extrabold text-yellow-400">
+            PMVA Training
+        </h1>
+
+        <div class="hidden md:flex gap-8 text-white font-medium">
+            <a href="index.html" class="hover:text-yellow-400">Home</a>
+            <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+            <a href="form.html" class="hover:text-yellow-400">Apply</a>
+        </div>
+    </div>
+</nav>
+
+<body class="bg-slate-950 text-white">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-r from-[#001F54] via-[#0A2E73] to-[#001F54] py-24">
+
+        <div class="absolute w-80 h-80 bg-yellow-400 rounded-full opacity-10 blur-3xl -top-20 -left-20 floating"></div>
+        <div class="absolute w-96 h-96 bg-yellow-300 rounded-full opacity-10 blur-3xl bottom-0 right-0 floating"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 fade-up">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Contact <span class="text-yellow-400">PMVA Training</span>
+            </h1>
+
+            <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+                Have questions about our accredited Prevention and Management of
+                Violence and Aggression (PMVA) courses? Our team is ready to help
+                you choose the right training programme.
             </p>
         </div>
+    </section>
 
-        <div class="grid lg:grid-cols-2 gap-10">
+    <!-- Contact Section -->
+    <section class="py-20 bg-slate-900">
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
 
             <!-- Contact Information -->
-            <div class="bg-[#081F4D] rounded-3xl p-10 text-white shadow-2xl">
+            <div class="fade-up">
 
-                <h3 class="text-3xl font-bold text-yellow-400 mb-8">
-                    Contact Information
-                </h3>
+                <h2 class="text-4xl font-bold text-yellow-400 mb-8">
+                    Get In Touch
+                </h2>
 
-                <div class="space-y-8">
+                <div class="space-y-6">
 
-                    <div class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-full bg-yellow-400 flex items-center justify-center text-2xl">
-                            📍
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">Address</h4>
-                            <p class="text-gray-300">
-                                Your Office Address Here
-                            </p>
-                        </div>
+                    <div class="glass rounded-xl p-6 border border-yellow-500/20 hover:scale-105 transition duration-300">
+                        <h3 class="font-semibold text-xl mb-2">📞 Phone</h3>
+                        <p class="text-gray-300">
+                            +44 XXX XXX XXXX
+                        </p>
                     </div>
 
-                    <div class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-full bg-yellow-400 flex items-center justify-center text-2xl">
-                            📞
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">Phone</h4>
-                            <p class="text-gray-300">
-                                +263 77 123 4567
-                            </p>
-                        </div>
+                    <div class="glass rounded-xl p-6 border border-yellow-500/20 hover:scale-105 transition duration-300">
+                        <h3 class="font-semibold text-xl mb-2">✉️ Email</h3>
+                        <p class="text-gray-300">
+                            info@pmvatraining.co.uk
+                        </p>
                     </div>
 
-                    <div class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-full bg-yellow-400 flex items-center justify-center text-2xl">
-                            ✉️
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">Email</h4>
-                            <p class="text-gray-300">
-                                info@pmvatraining.com
-                            </p>
-                        </div>
+                    <div class="glass rounded-xl p-6 border border-yellow-500/20 hover:scale-105 transition duration-300">
+                        <h3 class="font-semibold text-xl mb-2">📍 Office</h3>
+                        <p class="text-gray-300">
+                            Contact us for training venue details or on-site
+                            organisational bookings.
+                        </p>
                     </div>
 
-                    <div class="flex items-center gap-5">
-                        <div class="w-14 h-14 rounded-full bg-yellow-400 flex items-center justify-center text-2xl">
-                            🕒
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">Office Hours</h4>
-                            <p class="text-gray-300">
-                                Monday – Friday<br>
-                                08:00 AM – 05:00 PM
-                            </p>
-                        </div>
+                    <div class="glass rounded-xl p-6 border border-yellow-500/20 hover:scale-105 transition duration-300">
+                        <h3 class="font-semibold text-xl mb-2">🕒 Training Support</h3>
+                        <p class="text-gray-300">
+                            Assistance for PMVA Refresher, Full Courses,
+                            Application Forms, and Pre-Health Screening.
+                        </p>
                     </div>
 
                 </div>
@@ -83,100 +135,90 @@
             </div>
 
             <!-- Contact Form -->
-            <div class="bg-white rounded-3xl shadow-2xl p-10">
+            <div class="fade-up">
 
-                <h3 class="text-3xl font-bold text-[#081F4D] mb-8">
-                    Send Us a Message
-                </h3>
+                <form class="bg-white rounded-3xl p-8 shadow-2xl text-gray-900">
 
-                <form class="space-y-6">
+                    <h2 class="text-3xl font-bold mb-6 text-[#001F54]">
+                        Send Us a Message
+                    </h2>
 
-                    <div class="grid md:grid-cols-2 gap-5">
+                    <div class="space-y-5">
 
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">
-                                First Name
-                            </label>
-
-                            <input
-                                type="text"
-                                class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition"
-                                placeholder="John">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-2">
-                                Last Name
-                            </label>
-
-                            <input
-                                type="text"
-                                class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition"
-                                placeholder="Doe">
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-2">
-                            Email Address
-                        </label>
+                        <input
+                            type="text"
+                            placeholder="Full Name"
+                            class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-yellow-400">
 
                         <input
                             type="email"
-                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition"
-                            placeholder="you@example.com">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-2">
-                            Phone Number
-                        </label>
+                            placeholder="Email Address"
+                            class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-yellow-400">
 
                         <input
                             type="tel"
-                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition"
-                            placeholder="+263">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-2">
-                            Course Interest
-                        </label>
+                            placeholder="Phone Number"
+                            class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-yellow-400">
 
                         <select
-                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition">
+                            class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-yellow-400">
 
-                            <option>Select a course</option>
+                            <option>Select Course</option>
                             <option>PMVA 1-Day Refresher</option>
                             <option>PMVA 2-Day Course</option>
-                            <option>PMVA 3-Day Course</option>
+                            <option>PMVA 3-Day Full Course</option>
                             <option>General Enquiry</option>
 
                         </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-2">
-                            Your Message
-                        </label>
 
                         <textarea
                             rows="6"
-                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition"
-                            placeholder="Type your message here..."></textarea>
-                    </div>
+                            placeholder="Your Message"
+                            class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
 
-                    <button
-                        type="submit"
-                        class="w-full bg-yellow-400 hover:bg-yellow-500 text-[#081F4D] font-bold py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
-                        Send Message
-                    </button>
+                        <button
+                            type="submit"
+                            class="w-full bg-yellow-400 hover:bg-yellow-500 text-[#001F54] font-bold py-4 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+
+                    </div>
 
                 </form>
 
             </div>
 
         </div>
-    </div>
-</section>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[#001F54] py-16">
+        <div class="max-w-5xl mx-auto text-center px-6">
+
+            <h2 class="text-4xl font-bold mb-4">
+                Ready to Start Your PMVA Training?
+            </h2>
+
+            <p class="text-gray-300 mb-8">
+                Contact us today to enquire about accredited PMVA courses,
+                annual refresher training, application forms, or pre-health
+                screening requirements.
+            </p>
+
+            <button class="bg-yellow-400 text-[#001F54] px-8 py-4 rounded-full font-bold hover:scale-110 transition duration-300">
+                Book Your Course
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-400">
+            © 2026 PMVA Training. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
